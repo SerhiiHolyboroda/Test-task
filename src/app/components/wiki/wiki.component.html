@@ -60,7 +60,7 @@
 
 <div class="column">
   <div class="main">
-    <div class=" Typelist dropdown">
+    <div class=" Typelist dropdown" >
       <div *ngFor="let type of Types , let i = index  " class="StylingTypes dropdown-content">
 
 
@@ -68,7 +68,7 @@
 
           <input type="hidden" name="alarm" value="False" />
           <input class="custom-checkbox-input" name="alarm" value="True" type="checkbox"
-            (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}">
+            (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}" (click)="hideinfo()">
           <h4 class="{{  type.name }} ForAllTypes  "> {{  type.name }} </h4>
 
         </label>
@@ -94,7 +94,7 @@
 
           <!-- <div *ngIf=" 51 < i && i < 101 ">  -->
           <ng-container *ngIf="hide">
-            <div *ngIf="0 < i && i <= fiftyOne " class="border">
+            <div *ngIf="List1__I < i && i <= List1__II " class="border">
               <!--тут border -->
               <!-- <div>{{   [i] }}</div>
             <div> {{  p[i]}}</div> -->
@@ -127,7 +127,7 @@
 
           <!-- <div *ngIf=" 51 < i && i < 101 ">  -->
           <ng-container *ngIf="hide">
-            <div *ngIf=" 51 <= i && i <= oneHundredOne " class="border">
+            <div *ngIf=" List2__I <= i && i <= List2__II " class="border">
               <!--тут border -->
               <!-- <div>{{   [i] }}</div>
             <div> {{  p[i]}}</div> -->
@@ -158,7 +158,7 @@
         <div *ngFor="let p of Allpp , let i = index  " (click)="onClickMe(Allpp , i)">
 
           <ng-container *ngIf="hide">
-            <div *ngIf="   i >= 101 && i <= oneHundredTwentyFive" class="border">
+            <div *ngIf="   i >= List3__I && i <= List3__II" class="border">
 
               <div class="images"> <img src="https://pokeres.bastionbot.org/images/pokemon/{{p.id}}.png" alt=""></div>
               <div class="Pokemons__List3__pName">{{  p.name }}</div>
@@ -198,17 +198,21 @@
         <div> <img src="https://pokeres.bastionbot.org/images/pokemon/{{p.id}}.png" alt="Info" class="info__img"></div>
 
 
-        <div *ngFor="let n of p.types , let a = index  ">
-          <div class="{{  n.type.name }}">{{  n.type.name }} </div>
-        </div>
+         
+        
         <!-- if id < 10; 100 -->
         <!-- <div  >   #00{{  p.id }}</div> -->
-        <div> #0{{  p.id }}</div>
+        <div>{{  p.name }}</div> <div> #0{{  p.id }}</div>
         <!-- <div *ngIf=" p.id > 10 ">   #{{  p.id }}</div> -->
-        <div class=' '>{{  p.stats[0].stat.name}} {{  p.stats[0].base_stat}}</div>
+        <div *ngFor="let n of p.types , let a = index  ">
+          
+          <div class="{{  n.type.name }}">{{  n.type.name }} </div>
+        </div>
         <div class=' '>{{  p.stats[1].stat.name}} {{  p.stats[1].base_stat}}</div>
         <div class=' '> {{  p.stats[2].stat.name}} {{  p.stats[2].base_stat}}</div>
+        <div class=' '>{{  p.stats[0].stat.name}} {{  p.stats[0].base_stat}}</div>
         <div class=' '> {{  p.stats[3].stat.name}} {{  p.stats[3].base_stat}}</div>
+                
         <div class=' '> {{  p.stats[4].stat.name}} {{  p.stats[4].base_stat}}</div>
         <div class=' '> {{  p.stats[5].stat.name}} {{  p.stats[5].base_stat}}</div>
         <div class=' '> weight {{  p.weight }}</div>
@@ -225,7 +229,7 @@
 
 </div>
 
-<div class="button" id="button-2" (click)="loadPokemons()">
+<div class="buttonForMore" id="button-2" (click)="loadPokemons()" (click)="hideinfo()">
   <div id="slide"></div>
   <a href="#">Load more</a>
 </div>

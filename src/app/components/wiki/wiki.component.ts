@@ -24,10 +24,17 @@ export class WikiComponent implements OnInit {
   try:boolean   
   water:boolean = false
 // 
+List1__I :number = 0
+List1__II :number = 4
+
+List2__I :number = 50
+List2__II  :number  = 53
+
+List3__I  :number  = 110
+List3__II :number = 113
  
-fiftyOne:number = 10
-oneHundredOne:number  = 60
-oneHundredTwentyFive:number = 110
+ 
+ 
 
 count: number = 0;
 s:number = 20
@@ -129,9 +136,12 @@ Types:Array<any> =[]
     console.log(this.Clicked)
   }
   loadPokemons(){
-    this.fiftyOne  += 9
-    this.oneHundredOne  += 9
-    this.oneHundredTwentyFive += 9
+    this.List1__I  += 4
+    this.List1__II  += 4
+    this.List2__I  += 4
+    this.List2__II  += 4
+    this.List3__I  += 4
+    this.List3__II  += 4
   }
 showinfo(){
   this.hideme = true
