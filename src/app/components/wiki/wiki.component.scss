@@ -100,32 +100,78 @@
     margin: 250px 50px 0 0;
     position: sticky  ; 
     &__name{
-      border: 0.5px solid;
+      display: flex;
+      &__part1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        border: 0.5px solid;
+      }
     }
  &__type{
- 
+  display: flex;
+  
  }
    &__atack{
- 
+    display: flex;
+    &__part1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      border: 0.5px solid;
+    }
    }
    &__defense{
- 
+    display: flex;
+    &__part1{
+      width: 100px;
+      border: 0.5px solid;
+    }
    }
     &__health{
-     
+      display: flex;
+      &__part1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        border: 0.5px solid;
+      }
     }
   &__SPatack{
-     
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
             
   &__defense{
-   
+    display: flex;
+    &__part1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      border: 0.5px solid;
+    }
   }
  &__speed{
-  
+  display: flex;
+  &__part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 0.5px solid;
+  }
  }
    &__weight{
- 
+    width: 100px;
+    border: 0.5px solid;
+      display: flex;
+        justify-content: center;
+        align-items: center;
    }
 
  
