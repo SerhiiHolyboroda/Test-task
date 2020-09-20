@@ -93,6 +93,10 @@ Types:Array<any> =[]
 
   )
  }
+ public Clear() {
+  this.Allpp =  [];
+  this.getP();
+ }
  private getCustomT(i:number){
   this.allPokemonsService.getCustomTypes(i).subscribe(
      

@@ -30,12 +30,12 @@
     }
     &__List1 {
       
-       
+ 
       width: 25%;
-       
+ 
      
       &__pName {
-        margin-right: 15%;
+ 
         font-family: "Flexo-Demi",arial,sans-serif;
         color: #313131;
         text-transform: none;
@@ -51,7 +51,7 @@
      
   
       &__pName {
-        margin-right: 15%;
+ 
         font-family: "Flexo-Demi",arial,sans-serif;
         color: #313131;
         text-transform: none;
@@ -67,7 +67,7 @@
      
   
       &__pName {
-        margin-right: 15%;
+    
         font-family: "Flexo-Demi",arial,sans-serif;
       color: #313131;
       text-transform: none;
@@ -99,6 +99,40 @@
     justify-content: center;
     margin: 250px 50px 0 0;
     position: sticky  ; 
+    &__name{
+      border: 0.5px solid;
+    }
+ &__type{
+ 
+ }
+   &__atack{
+ 
+   }
+   &__defense{
+ 
+   }
+    &__health{
+     
+    }
+  &__SPatack{
+     
+  }
+            
+  &__defense{
+   
+  }
+ &__speed{
+  
+ }
+   &__weight{
+ 
+   }
+
+ 
+&__moves{
+
+}
+
   }
   // .images{                     here image backjground
   
@@ -602,7 +636,15 @@
    
   
   @media screen and (max-width: 1024px) {
-
+    .info {
+      height: 150px;
+      margin: 50px 100px 0 0;
+      width: 5%;
+      &__img{
+        width: 100px;
+       height: 100px;
+     }
+    }
     // .Pokemons{
     //   flex-direction: column;
     // }
@@ -611,24 +653,43 @@
     //   margin-bottom: 40%;
     // }
     .Pokemons__List1{
+      margin-left: 5%;
       width: 25%;
     }
+ 
     .Pokemons__List2{
+      margin-left: 15%;
       width: 25%;
     }
     .Pokemons__List3{
-      // display: none;
-      width: 25%;
+      display: none;
+      // width: 25%;
     }
     #button-2 {
       margin-left: 10%;}
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 801px) {
+    .info {
+      height: 100px;
+      width: 5%;
+      margin: 50px 50px 0 0;
+      &__img{
+        width: 100px;
+       height: 100px;
+     }
+    }
     .flex{
       flex-direction: column;
     }
     .Pokemons{
       flex-direction: column;
+    }
+    .Pokemons__List2{
+      display: none;
+    }
+    .Pokemons__List3{
+      display: none;
+      // width: 25%;
     }
     .Pokemons *{
       margin-top: 5%;
@@ -814,7 +875,7 @@
     width: 100%;
     height: 100%;
     left: -200px;
-    background: blue;
+    background: #008cff;
     position: absolute;
     transition: all .35s ease-Out;
     bottom: 0;
@@ -825,7 +886,7 @@
   }
   
   #button-2:hover a {
-    color: #2D3142;
+    color: #008cff;
   }
   
   .custom-checkbox {

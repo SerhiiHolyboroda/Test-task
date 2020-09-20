@@ -61,6 +61,7 @@
 <div class="column">
   <div class="main">
     <div class=" Typelist dropdown" >
+      <div class="clear" (click)= "Clear()">Show All</div>
       <div *ngFor="let type of Types , let i = index  " class="StylingTypes dropdown-content">
 
 
@@ -104,7 +105,7 @@
               <!-- <div>тут ід {{  p.id }}</div> -->
 
               <!-- <div>{{  p.types[0].type.name}}  </div> -->
-              <div class="flex">
+              <div class="flex"  >
 
                 <div *ngFor="let n of p.types , let a = index  ">
 
@@ -206,20 +207,21 @@
         <!-- <div *ngIf=" p.id > 10 ">   #{{  p.id }}</div> -->
         <div *ngFor="let n of p.types , let a = index  ">
           
-          <div class="{{  n.type.name }}">{{  n.type.name }} </div>
+          <div class="info__type">  <div class="{{  n.type.name }}"> {{  n.type.name }} </div></div>
         </div>
-        <div class=' '>{{  p.stats[1].stat.name}} {{  p.stats[1].base_stat}}</div>
-        <div class=' '> {{  p.stats[2].stat.name}} {{  p.stats[2].base_stat}}</div>
-        <div class=' '>{{  p.stats[0].stat.name}} {{  p.stats[0].base_stat}}</div>
-        <div class=' '> {{  p.stats[3].stat.name}} {{  p.stats[3].base_stat}}</div>
+        <div class='info__atack '><div class='info__atack__part1  '>  {{  p.stats[1].stat.name}} </div> <div class='info__atack__part2 '>  {{  p.stats[1].base_stat}}</div></div>
+        <div class='info__defense '>  <div class='info__defense__part1  '> {{  p.stats[2].stat.name}}</div> <div class='info__atack __part2'></div>{{  p.stats[2].base_stat}}</div></div>
+        <div class=' info__health'> <div class=' info__health__part1 '> {{  p.stats[0].stat.name}} </div><div class='info__atack__part2 '> {{  p.stats[0].base_stat}}</div></div>
+        <div class='info__SPatack'>  SP  atack  {{  p.stats[3].base_stat}}</div>
                 
-        <div class=' '> {{  p.stats[4].stat.name}} {{  p.stats[4].base_stat}}</div>
-        <div class=' '> {{  p.stats[5].stat.name}} {{  p.stats[5].base_stat}}</div>
-        <div class=' '> weight {{  p.weight }}</div>
+        <div class=' info__defense'>   SP  defense {{  p.stats[4].base_stat}}</div>
+        <div class='info__speed  '>   <div class='info__speed__part1  '>  {{  p.stats[5].stat.name}}</div>   <div class='info__speed__part2  '>  {{  p.stats[5].base_stat}}</div></div>
+        <div class='info__weight '>   weight {{  p.weight }}</div> 
+
 
         <!--  ????? -->
         <div class=' '> moves {{  p.moves.length }}</div>
-      </div>
+     
     </div>
 
 
