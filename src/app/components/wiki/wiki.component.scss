@@ -21,8 +21,20 @@
   .top{
     margin-top: 10px;
   }
+ 
   .Pokemons {
-    
+ 
+    animation: pulse 2.5s ;
+    // -webkit-animation-play-state: paused;
+      @keyframes pulse {
+        0% {
+         opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transition: opacity 1s;
+        }
+      }
     display: flex;
     justify-content:center;
     align-items: center;
@@ -102,7 +114,7 @@
     display: flex;
     justify-content: center;
     justify-content: center;
-    margin: 250px 50px 0 0;
+    margin: 150px 50px 0 0;
     position: sticky  ; 
     &__name{
   margin: 5px 0 5px 0;
@@ -822,7 +834,7 @@
   }
    
   
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     .info {
       height: 150px;
       margin: 50px 100px 0 0;
@@ -832,9 +844,7 @@
        height: 100px;
      }
     }
-    // .Pokemons{
-    //   flex-direction: column;
-    // }
+  
     // .Pokemons *{
     //   margin-top: 40%;
     //   margin-bottom: 40%;

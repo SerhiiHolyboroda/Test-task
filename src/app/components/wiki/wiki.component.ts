@@ -151,7 +151,8 @@ showinfo(){
   this.hideme = true
 }
 hideinfo(){
-  this.hideme = !this.hideme
+  this.hideme = false
+  
 }
 
   chooseType(event : any, i: number){
