@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap');
+* {
+  font-family: 'Playfair Display', serif;
+}
 .main {
     display: flex;
     flex-direction: row;
@@ -97,86 +101,213 @@
     top: 0;
     display: flex;
     justify-content: center;
+    justify-content: center;
     margin: 250px 50px 0 0;
     position: sticky  ; 
     &__name{
+  margin: 5px 0 5px 0;
       display: flex;
+      justify-content: center;
+      align-items: center;
       &__part1{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100px;
+        height: 30px;
+        border: 0.5px solid;
+      }
+      &__part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 50px;
         border: 0.5px solid;
       }
     }
  &__type{
-  display: flex;
-  
- }
-   &__atack{
-    display: flex;
-    &__part1{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100px;
-      border: 0.5px solid;
-    }
-   }
-   &__defense{
-    display: flex;
-    &__part1{
-      width: 100px;
-      border: 0.5px solid;
-    }
-   }
-    &__health{
-      display: flex;
-      &__part1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100px;
-        border: 0.5px solid;
-      }
-    }
-  &__SPatack{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-            
-  &__defense{
-    display: flex;
-    &__part1{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100px;
-      border: 0.5px solid;
-    }
-  }
- &__speed{
+  margin: 5px 0 5px 0;
   display: flex;
   &__part1{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
+    height: 30px;
+ 
+  }
+  &__part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
+ 
+  }
+ }
+   &__atack{
+    margin: 5px 0 5px 0;
+    display: flex;
+    &__part1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 30px;
+      border: 0.5px solid;
+    }
+    &__part2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50px;
+      border: 0.5px solid;
+    }
+   }
+   &__defense{
+    margin: 5px 0 5px 0;
+    display: flex;
+    &__part1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 30px;
+      border: 0.5px solid;
+    }
+    &__part2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50px;
+      border: 0.5px solid;
+    }
+   }
+    &__health{
+      margin: 5px 0 5px 0;
+      display: flex;
+      &__part1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+        border: 0.5px solid;
+      }
+      &__part2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 50px;
+        border: 0.5px solid;
+      }
+    }
+  &__SPatack{
+    margin: 5px 0 5px 0;
+    display: flex;
+    &__part1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 30px;
+      border: 0.5px solid;
+    }
+    &__part2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50px;
+      border: 0.5px solid;
+    }
+  }
+            
+  &__defense{
+    margin: 5px 0 5px 0;
+    display: flex;
+    &__part1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 30px;
+      border: 0.5px solid;
+    }
+    &__part2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50px;
+      border: 0.5px solid;
+    }
+  }
+ &__speed{
+  margin: 5px 0 5px 0;
+  display: flex;
+  &__part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 0.5px solid;
+  }
+  &__part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
     border: 0.5px solid;
   }
  }
    &__weight{
-    width: 100px;
-    border: 0.5px solid;
+    margin: 5px 0 5px 0;
+     display: flex;
+     &__part1{
       display: flex;
-        justify-content: center;
-        align-items: center;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 30px;
+      border: 0.5px solid;
+    }
+    &__part2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50px;
+      border: 0.5px solid;
+    }
    }
 
  
 &__moves{
-
+  margin: 5px 0 5px 0;
+  display: flex;
+  &__part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 0.5px solid;
+  }
+  &__part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 50px;
+    border: 0.5px solid;
+  }
 }
 
   }
@@ -255,6 +386,16 @@
   .Typelist{
     *{
       // width: 100%;button
+    }
+    .clear{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: royalblue;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
     }
     margin: 50px 0 0 50px;
     top: 0;
@@ -742,7 +883,7 @@
       margin-bottom: 5%;
     }
     #button-2 {
-      margin-left: 1% ;}
+      margin-left: 5% ;}
   }
   
   
@@ -787,6 +928,7 @@
     width: 56px;
     height: 56px;
     background-color: #29B6F6;
+    
     border-radius: 50%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   }
@@ -830,6 +972,7 @@
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+    
   }
   
   [data-tooltip]:before {
@@ -932,7 +1075,7 @@
   }
   
   #button-2:hover a {
-    color: #008cff;
+    color: black;
   }
   
   .custom-checkbox {
